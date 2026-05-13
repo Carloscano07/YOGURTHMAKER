@@ -1,0 +1,39 @@
+MANUAL TECNICO - YOGURTER
+
+YOGURTER es una API REST hecha en Java para gestionar recetas, lotes y monitoreo de produccion de yogurt.
+
+1. Tecnologias principales
+   - Java 21.
+   - Spring Boot.
+   - Spring Web MVC para los endpoints REST.
+   - Spring Data JPA para persistencia.
+   - Base de datos H2 en memoria.
+   - Maven como gestor del proyecto.
+   - Swagger/OpenAPI para documentar y probar la API.
+   - Lombok para reducir codigo repetitivo en modelos y DTO.
+
+2. Estructura del proyecto
+   - src/main/java/com/cano7/demo/DemoApplication.java: clase principal.
+   - config/: configuracion de OpenAPI.
+   - domain/controller/: controladores REST.
+   - domain/service/: logica de negocio.
+   - domain/repository/: acceso a datos con JPA.
+   - domain/model/: entidades principales como Recipe, Ingredient, YogurtBatch y TemperatureLog.
+   - dto/: objetos para entrada y salida de datos.
+   - exception/: manejo de errores del sistema.
+   - src/main/resources/application.properties: configuracion de base de datos, JPA, H2 y Swagger.
+   - docs/: evidencias y documentacion generada de la API.
+
+3. Endpoints principales
+   - /api/recipes: gestion de recetas.
+   - /api/batches: gestion de lotes de yogurt.
+   - /api/monitoring: consultas de monitoreo, dashboard y temperaturas.
+   - /swagger-ui/index.html: interfaz Swagger.
+   - /h2-console: consola de la base de datos H2.
+
+4. Datos y ejecucion
+   - La base de datos es H2 en memoria con URL jdbc:h2:mem:yogurtdb.
+   - Al iniciar la aplicacion se crean las tablas automaticamente.
+   - Al detener la aplicacion, los datos se pierden porque la base esta en memoria.
+   - Para ejecutar el proyecto en Windows:
+     mvnw.cmd spring-boot:run

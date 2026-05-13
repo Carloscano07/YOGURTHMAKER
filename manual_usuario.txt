@@ -1,0 +1,25 @@
+MANUAL DE USUARIO - YOGURTER
+
+YOGURTER es un sistema para gestionar la produccion de yogurt. Permite crear recetas, iniciar lotes, avanzar por las etapas del proceso y revisar temperaturas.
+
+1. Iniciar el programa
+   - Abrir el proyecto en el computador.
+   - Ejecutar el programa con Maven:
+     mvnw.cmd spring-boot:run
+   - Cuando termine de cargar, abrir en el navegador:
+     http://localhost:8080/swagger-ui/index.html
+
+2. Usar el sistema
+   - En Swagger aparecen las opciones del sistema organizadas por secciones.
+   - En Recipes se pueden crear, consultar, buscar, actualizar, activar o desactivar recetas.
+   - En Yogurt Batches se pueden crear lotes de yogurt y cambiar su estado: calentamiento, inoculacion, incubacion, refrigeracion, completado o fallido.
+   - Tambien se puede registrar la temperatura de un lote.
+   - En Monitoring se puede consultar el dashboard, los lotes activos y el historial de temperaturas.
+
+3. Recomendaciones
+   - Crear primero una receta antes de iniciar un lote.
+   - Revisar el ID generado por cada receta o lote, porque se usa para hacer consultas y cambios.
+   - Registrar temperaturas durante el proceso para tener control del lote.
+
+4. Salir
+   - Para detener el programa, cerrar la ejecucion en la terminal con Ctrl + C.

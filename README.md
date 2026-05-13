@@ -1,17 +1,38 @@
-#  Sistema de Gestión de Yogurt
-Este es el repositorio final del Proyecto de Aula para la gestión y monitoreo de producción.
+#  Proyecto YOGURTER
+### Sistema de Gestión y Monitoreo de Producción
 
-##  Manual de Usuario
-1. **Instalación:** Tener instalado Java 21.
-2. **Ejecución:** Abrir una terminal en la carpeta del proyecto y ejecutar:
-   `./mvnw spring-boot:run`
-3. **Uso:** Una vez que el programa funcione, puedes ver y probar las funciones en:
-   `http://localhost:8080/swagger-ui.html`
+Este repositorio contiene la entrega final del proyecto. Es una herramienta para el control de producción de yogurt que permite gestionar recetas, ingredientes y hacer seguimiento a la temperatura de los lotes.
+
+---
+
+##  Organización del Código
+El proyecto utiliza una **Arquitectura en Capas** para mantener el orden y la limpieza:
+
+* **Controllers:** Manejo de rutas y peticiones.
+* **Services:** Lógica de negocio y reglas del sistema.
+* **Repositories:** Acceso y persistencia de datos.
+* **Models:** Entidades principales (`YogurtBatch`, `Recipe`, `Ingredient`).
+
+---
+
+##  Tecnologías
+* **Lenguaje:** Java 21
+* **Framework:** Spring Boot 3
+* **Documentación:** Swagger / OpenAPI
+* **Gestor:** Maven
+
+---
 
 ##  Contenido del Repositorio
-* **Código Fuente:** En la carpeta `src`.
-* **Evidencias:** Pantallazos y pruebas en la carpeta `docs`.
-* **Licencia:** Archivo `LICENSE` adjunto (MIT).
+Para revisar el avance del proyecto, puede navegar por las siguientes carpetas:
 
-## ⚖️ Licencia
-El proyecto cuenta con una Licencia MIT, lo que permite su uso académico y profesional.
+*  **`src/`**: Contiene todo el código fuente del sistema.
+*  **`documentos/`**: Aquí se encuentran los manuales y las evidencias (pantallazos) del funcionamiento.
+*  **`pom.xml`**: Listado de dependencias y librerías usadas.
+
+---
+
+##  Autoría
+* **Estudiante:** Carlos Arturo Cano S.
+* **Programa:** Desarrollo de software - 2026
+* **Licencia:** MIT (Uso académico)
